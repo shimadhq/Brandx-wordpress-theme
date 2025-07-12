@@ -1,0 +1,113 @@
+.features-list-widget{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-list-heading{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0064DC;
+    margin: 0;
+}
+
+.features-list-content{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #626262;
+}
+
+.items-section{
+    direction: rtl;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-section .item{
+    width: 250px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px 0 #2e383f1f;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.items-section .item img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.items-section .item h3{
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2E383F;
+}
+
+.items-section .item p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #626262;
+}
+
+.items-section .items-container .item:nth-child(3){
+    background: #0064DC;
+}
+
+.items-section .items-container .item:nth-child(3) h3{
+    color: #FFFFFF;
+}
+
+.items-section .items-container .item:nth-child(3) p{
+    color: #F7F8F9;
+}
+
+/* mobile styles */
+@media (max-width: 767px) {
+    .items-section .items-container{
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-bottom: 20px;
+    }
+
+    .items-section .item{
+        flex: 0 0 220px;
+        min-width: 220px;
+    }
+
+    .items-section .items-container .item:nth-child(3){
+        background: #0064DC;
+    }
+
+    .items-section .items-container .item:nth-child(3) h3{
+        color: #FFFFFF;
+    }
+
+    .items-section .items-container .item:nth-child(3) p{
+        color: #F7F8F9;
+    }
+}

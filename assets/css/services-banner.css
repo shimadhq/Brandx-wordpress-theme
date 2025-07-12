@@ -1,0 +1,75 @@
+.banner-services-widget{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}
+
+.image-section{
+    width: 50%;
+}
+
+.image{
+    width: 600px;
+    height: auto;
+}
+
+.content-section{
+    width: 50%;
+    align-content: center;
+}
+
+.services_banner_heading{
+    font-size: 26px;
+    font-weight: 700;
+    color: #0064DC;
+}
+
+.services_banner_content{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #626262;
+    text-align: justify;
+}
+
+.button-group{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.btn{
+    width: 200px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 12px 8px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: #0064DC;
+    box-shadow: 0 10px 20px 0 #0064DC38 !important;
+}
+
+.btn-secondary{
+    background-color: #FFB342;
+    box-shadow: 0 10px 20px 0 #FFB34252 !important;
+}
+
+@media(max-width: 768px) {
+    .banner-services-widget{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section{
+        width: 100%;
+    }
+
+    .content-section{
+        width: 100%;
+    }
+}

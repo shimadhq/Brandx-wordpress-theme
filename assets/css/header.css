@@ -1,0 +1,260 @@
+.header-desktop{
+    display: block;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.header-mobile{
+    display: none;
+}
+
+.header-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top{
+    width: 100%;
+    padding: 0px 8px 20px 8px;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 7px 25px 0 #2E383F0A;
+}
+
+.header-logo{
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.header-info{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    align-items: center;
+}
+
+.phone-icon{
+    width: 20px;
+    height: 21px;
+    padding: 8px 11px 12px 11px;
+    background: #0064DC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 3%;
+    text-align: right;
+    color: #0064DC;
+    text-decoration: none;
+}
+
+.phone{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 3%;
+    text-align: right;
+    color: #0064DC;
+    text-decoration: none;
+}
+
+.search-section .search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form{
+    width: 219px;
+    height: 42px;
+}
+
+.search-field{
+    padding: 5px;
+    text-align: right;
+    border: 1px solid #E9ECEF;
+    border-radius: 15px;
+    color: #BBBBBB;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.search-button{
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background: #0064DC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-search-icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.main-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    position: relative;
+    direction: rtl;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    background-color: #0064DC;
+    gap: 25px;
+    border-radius: 50px;
+    bottom: 25px;
+}
+
+.nav-menu .menu-item {
+    position: relative;
+    direction: rtl;
+}
+
+.nav-menu li {
+    margin: 0 5px;
+    position: relative;
+}
+
+.menu-item a{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.submenu-arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.submenu-arrow {
+    transform: rotate(180deg);
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu-item:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 30px 0px #2E383F0F;
+    border-radius: 30px;
+    list-style: none;
+    padding: 0px;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.sub-menu li a{
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 10px;
+    color: #626262;
+}
+
+.sub-menu li a:hover{
+    font-size: 14px;
+    font-weight: 400;
+    color: #0064DC;
+    border-right: 3px solid #0064DC;
+    border-radius: 10px;
+}
+
+.menu-icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+@media(max-width: 768px) {
+    .header-desktop{
+        display: none;
+    }
+
+    .header-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        direction: rtl;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .search-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        direction: rtl;
+    }
+
+    .field-mobile{
+        background-color: #0064DC;
+        padding: 5px;
+        text-align: right;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        border-radius: 30px;
+        border: none;
+    }
+}
