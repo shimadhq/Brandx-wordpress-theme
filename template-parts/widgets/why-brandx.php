@@ -131,6 +131,8 @@ class Why_Brandx_Widget extends Widget_Base{
     public function render() {
         $settings = $this->get_settings_for_display();
         $counters = $settings['counters_list'];
+        $total = count($counters);
+        $current = 0;
 
         ?>
         <div class="why-brandx">
@@ -144,10 +146,15 @@ class Why_Brandx_Widget extends Widget_Base{
                 <?php if (!empty($counters)) : ?>
                     <div class="why-counters">
                         <?php foreach ($counters as $counter) : ?>
+                            <?php $current++; ?>
                             <div class="wpc-counter-box">
                                 <div class="wpc-counter-number" data-target="<?php echo esc_attr($counter['counter_number']); ?>">0</div>
                                 <div class="wpc-counter-label"><?php echo esc_html($counter['counter_title']); ?></div>
                             </div>
+
+                            <?php if ($current < $total) : ?>
+                                <div class="counter-divider"></div>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>

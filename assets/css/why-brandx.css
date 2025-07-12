@@ -31,7 +31,7 @@
 }
 
 .why-media{
-    width: 800px;
+    width: 850px;
 }
 
 .media-image{
@@ -40,14 +40,88 @@
 }
 
 .why-counters{
-    width: 532px;
+    width: 595px;
     display: flex;
     flex-direction: row;
     direction: rtl;
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 6px 30px 0 #2E383F0F;
+    box-shadow: 0 6px 30px 0 #2e383f13;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
+
+.wpc-counter-number{
+    color: #0064DC;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wpc-counter-label{
+    color: #1B1464;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 5px;
+}
+
+.counter-divider{
+    background: #ECECEB;
+    width: 2px;
+    height: 65px;
+}
+
+@media(max-width: 768px) {
+    .why-brandx{
+        flex-direction: column-reverse;
+        height: 910px;
+        background-color: #E9ECEF;
+    }
+
+    .why-content{
+        width: 100%;
+        padding: 0 30px 30px 30px;
+    }
+
+    .why-header{
+        margin: 0;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .why-description{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .why-media{
+        width: 100%;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .media-image{
+        position: relative;
+        bottom: 0;
+    }
+
+    .why-counters{
+        flex-direction: column;
+        width: 100%;
+        top: 10px;
+    }
+
+    .wpc-counter-box{
+        padding: 15px;
+    }
+
+    .counter-divider{
+        width: 230px;
+        height: 1px;
+    }
 }
